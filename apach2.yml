@@ -1,14 +1,14 @@
 kind: Pod
 apiVersion: v1
 metadata:
-  name: secondnginxpod
+  name: firstpod
   labels:
     app: webdev
     env: develops
 spec:
   containers:
-    - name: nginx2
-      image: nginx
+    - name: apache2
+      image: apache2
       ports:
         - containerPort: 80
 

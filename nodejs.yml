@@ -1,0 +1,13 @@
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: thidpodd
+  labels:
+    database: node
+    env: databae
+spec:
+  containers:
+    - name: nodejs
+      image: node
+      ports:
+        - containerPort: 80
