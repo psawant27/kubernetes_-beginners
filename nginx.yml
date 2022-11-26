@@ -1,0 +1,15 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: firstpod
+  labels:
+    app: webdev
+    env: develops
+spec:
+  containers:
+    - name: apache2
+      image: apache2
+      ports:
+        - containerPort: 80
+
+
